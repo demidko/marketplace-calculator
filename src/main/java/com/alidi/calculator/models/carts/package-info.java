@@ -3,7 +3,7 @@
  */
 @NonNullApi
 @NonNullFields
-package com.alidi.calculator.models.cart;
+package com.alidi.calculator.models.carts;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

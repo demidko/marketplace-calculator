@@ -6,7 +6,7 @@ import static org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR;
 import com.alidi.calculator.calculators.CartPriceCalculator;
 import com.alidi.calculator.dto.input.UnpricedCartView;
 import com.alidi.calculator.dto.output.PricedCartView;
-import com.alidi.calculator.models.cart.UnpricedCart;
+import com.alidi.calculator.models.carts.UnpricedCart;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;

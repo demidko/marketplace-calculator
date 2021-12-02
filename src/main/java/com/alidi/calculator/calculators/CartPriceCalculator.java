@@ -3,8 +3,8 @@ package com.alidi.calculator.calculators;
 import static java.util.stream.Collectors.toUnmodifiableList;
 
 import com.alidi.calculator.models.addresses.Address;
-import com.alidi.calculator.models.cart.PricedCart;
-import com.alidi.calculator.models.cart.UnpricedCart;
+import com.alidi.calculator.models.carts.PricedCart;
+import com.alidi.calculator.models.carts.UnpricedCart;
 import com.alidi.calculator.models.payments.PaymentMethod;
 import com.alidi.calculator.models.positions.PricedPosition;
 import com.alidi.calculator.models.positions.UnpricedPosition;

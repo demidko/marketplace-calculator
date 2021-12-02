@@ -2,7 +2,7 @@ package com.alidi.calculator.dto.output;
 
 import static java.util.stream.Collectors.toUnmodifiableList;
 
-import com.alidi.calculator.models.cart.PricedCart;
+import com.alidi.calculator.models.carts.PricedCart;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 import lombok.Value;

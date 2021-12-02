@@ -1,4 +1,4 @@
-package com.alidi.calculator.models.cart;
+package com.alidi.calculator.models.carts;
 
 import com.alidi.calculator.models.addresses.Address;
 import com.alidi.calculator.models.payments.PaymentMethod;

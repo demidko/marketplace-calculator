@@ -1,4 +1,4 @@
-package com.alidi.calculator.models.cart;
+package com.alidi.calculator.models.carts;
 
 import static java.util.stream.Collectors.toUnmodifiableList;
 
