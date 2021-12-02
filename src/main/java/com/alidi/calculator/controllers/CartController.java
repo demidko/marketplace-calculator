@@ -5,6 +5,7 @@ import com.alidi.calculator.dto.input.UnpricedCartView;
 import com.alidi.calculator.dto.output.PricedCartView;
 import com.alidi.calculator.models.cart.UnpricedCart;
 import lombok.AllArgsConstructor;
+import lombok.NonNull;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -32,7 +33,7 @@ public class CartController {
    * работу сервисов.
    */
   @PostMapping("/calculate-cart-price")
-  public PricedCartView calculatePrice(UnpricedCartView unpricedCartView) {
+  public PricedCartView calculatePrice(@NonNull UnpricedCartView unpricedCartView) {
     var unpricedCart = UnpricedCart.fromView(unpricedCartView);
     var pricedCart = cartPriceCalculator.calculateCart(unpricedCart);
     return PricedCartView.fromPricedCart(pricedCart);

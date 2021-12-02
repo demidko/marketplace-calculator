@@ -45,7 +45,7 @@ k8s-дескриптор с секретами
 и [переменными среды окружения](./src/main/java/com/alidi/calculator/BackendApplication.java) для
 нужной инфраструктуры. В данном примере, оно развернуто в Digital Ocean App Platform по адресу:
 
-* []()
+* [marketplace-calculator-cl95n.ondigitalocean.app](https://marketplace-calculator-cl95n.ondigitalocean.app/price?productId=1)
 
 ## Использование
 
