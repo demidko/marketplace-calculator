@@ -16,7 +16,7 @@ import lombok.Value;
  * Модель описывает входящие сведения о нерассчитанной корзине.
  */
 @Value
-public class UnpricedCart implements Cart {
+public class UnpricedCart implements Cart<UnpricedPosition> {
 
   /**
    * Нерассчитанные позиции

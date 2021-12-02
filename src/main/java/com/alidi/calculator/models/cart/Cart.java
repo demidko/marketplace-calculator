@@ -9,12 +9,12 @@ import java.util.Optional;
 /**
  * Базовый контракт подходит для любой корзины.
  */
-public interface Cart {
+public interface Cart<T extends Position> {
 
   /**
    * @return список позиций в корзине с типом товара и количеством заказанных экземпляров.
    */
-  List<Position> getPositions();
+  List<T> getPositions();
 
   /**
    * @return выбранный пользователем метод оплаты.

@@ -11,7 +11,7 @@ import lombok.Value;
  * Модель описывает рассчитанную корзину
  */
 @Value
-public class PricedCart implements Cart {
+public class PricedCart implements Cart<PricedPosition> {
 
   /**
    * Рассчитанные позиции по цене
