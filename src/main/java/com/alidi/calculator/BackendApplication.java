@@ -11,6 +11,8 @@ import com.alidi.calculator.storages.InMemoryPriceCache;
 import java.util.HashMap;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.SpringBootConfiguration;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
@@ -18,7 +20,8 @@ import org.springframework.context.annotation.Bean;
  * Здесь опишем инициализацию зависимостей, параметры и переменные среды окружения для нашего
  * приложения.
  */
-@SpringBootApplication
+@SpringBootConfiguration
+@EnableAutoConfiguration
 public class BackendApplication {
 
   /**
