@@ -21,9 +21,9 @@ public class PriceController {
    * @return итоговая цена товара
    */
   @GetMapping("/price")
-  public long calculatePrice(@RequestParam("productId") long productId) {
+  public double calculatePrice(@RequestParam("productId") long productId) {
     var minKnownPrice = 5_000;
     var maxKnownPrice = 5_000_000;
-    return ThreadLocalRandom.current().nextLong(minKnownPrice, maxKnownPrice);
+    return ThreadLocalRandom.current().nextDouble(minKnownPrice, maxKnownPrice);
   }
 }
