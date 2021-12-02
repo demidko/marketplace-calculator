@@ -6,5 +6,5 @@ RUN mvn clean package
 
 FROM openjdk:18 as backend
 WORKDIR /root
-COPY --from=builder /root/target/*.jar ./app
+COPY --from=builder /project/target/*.jar ./app
 ENTRYPOINT ["java", "-jar", "/root/app"]
