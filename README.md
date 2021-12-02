@@ -1,4 +1,4 @@
-# Калькулятор корзин
+# Marketplace Calculator
 
 Игрушечный RESTful API калькулятор корзин для абстрактного маркетплейса в вакууме.  
 Используется Java 11, Spring Boot и Maven.
