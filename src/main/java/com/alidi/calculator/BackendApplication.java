@@ -13,7 +13,6 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 /**
@@ -27,9 +26,9 @@ public class BackendApplication {
   /**
    * Переменная среды окружения PRICE_CALCULATION_URL, может быть задана извне, по умолчанию -
    * заглушка. Это URL внешнего сервиса расчёта цены по идентификатору товара. Будем считать что это
-   * простой endpoint, который позволяет отправить GET запрос с параметрами productId и
-   * paymentMethod, и получить в ответе цену числом. Также, условимся, что в заданном URL, productId
-   * уже шаблонизирован первым %s.
+   * простой endpoint, который позволяет отправить GET запрос с параметром productId, и получить в
+   * ответе цену числом. Также, условимся, что в заданном URL, productId уже шаблонизирован первым
+   * %s.
    */
   @Value("${price.service.url:http://localhost:8080/price?productId=%s}")
   private String priceCalculationUrl;
