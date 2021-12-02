@@ -1,6 +1,6 @@
-# Калькулятор цен
+# Калькулятор корзин
 
-Игрушечный RESTful API калькулятор цен для абстрактного маркетплейса в вакууме. Используется Java
+Игрушечный RESTful API калькулятор корзин для абстрактного маркетплейса в вакууме. Используется Java
 11, Spring Boot и Maven.
 
 * В используемом подходе к проектированию, как главное можно отметить _иммутабельность внутренних
@@ -52,7 +52,7 @@ k8s-дескриптор с секретами
 Для расчёта цены корзины используется HTTP endpoint `POST /calculate-cart-price?id={}`, например:
 
 ```shell
-
+curl -d '{"payment":"Google Pay","products":[{"id":1,"count":2}],"addressId":3}' -H "Content-Type: application/json" -X POST https://marketplace-calculator-cl95n.ondigitalocean.app/calculate-cart-price/
 ```
 
 Поскольку приложение доступно из сети, эту команду можно сразу запустить в терминале и поиграть с

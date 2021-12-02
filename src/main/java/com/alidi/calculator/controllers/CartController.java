@@ -11,6 +11,7 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -39,7 +40,7 @@ public class CartController {
    * работу сервисов.
    */
   @PostMapping("/calculate-cart-price")
-  public PricedCartView calculatePrice(UnpricedCartView unpricedCartView) {
+  public PricedCartView calculatePrice(@RequestBody UnpricedCartView unpricedCartView) {
     log.info("New request: {}", unpricedCartView);
     var unpricedCart = UnpricedCart.fromView(unpricedCartView);
     var pricedCart = cartPriceCalculator.calculateCart(unpricedCart);
