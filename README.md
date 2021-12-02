@@ -1,9 +1,9 @@
 # Калькулятор корзин
 
-Игрушечный RESTful API калькулятор корзин для абстрактного маркетплейса в вакууме. Используется Java
-11, Spring Boot и Maven.
+Игрушечный RESTful API калькулятор корзин для абстрактного маркетплейса в вакууме.  
+Используется Java 11, Spring Boot и Maven.
 
-* В используемом подходе к проектированию, как главное можно отметить _иммутабельность внутренних
+* В используемом подходе к проектированию, как главное, можно отметить _иммутабельность внутренних
   абстракций_, ибо это облегчает как программирование, так и отладку.
 * Несмотря на _стремление к функциональному стилю_, данный подход больше подходит под определение
   _мультипарадигменного проектирования_, поскольку функциональные концепты не везде удачно
@@ -43,7 +43,7 @@ docker run -v `pwd`:`pwd` -w `pwd` -p 80:8080 --rm price-calculator
 Благодаря Dockerfile мы легко можем развернуть наше приложение где угодно, всего лишь описав
 k8s-дескриптор с секретами
 и [переменными среды окружения](./src/main/java/com/alidi/calculator/BackendApplication.java) для
-нужной инфраструктуры. В данном примере, оно развернуто в Digital Ocean App Platform по адресу:
+нужной инфраструктуры. В данном примере, оно уже развернуто в Digital Ocean App Platform по адресу:
 
 * [marketplace-calculator-cl95n.ondigitalocean.app](https://marketplace-calculator-cl95n.ondigitalocean.app/price?productId=1)
 
@@ -52,7 +52,7 @@ k8s-дескриптор с секретами
 Для расчёта цены корзины используется HTTP endpoint `POST /calculate-cart-price?id={}`, например:
 
 ```shell
-curl -d '{"payment":"Google Pay","products":[{"id":1,"count":2}],"addressId":3}' -H "Content-Type: application/json" -X POST https://marketplace-calculator-cl95n.ondigitalocean.app/calculate-cart-price/
+curl -d '{"payment":"Google Pay","products":[{"id":1,"count":2}],"addressId":3}' -H "Content-Type: application/json" -X POST https://marketplace-calculator-cl95n.ondigitalocean.app/calculate-cart-price/```
 ```
 
 Поскольку приложение доступно из сети, эту команду можно сразу запустить в терминале и поиграть с
