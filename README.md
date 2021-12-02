@@ -29,11 +29,11 @@ self-executable jar можно запускать, например
 
 ## Сборка с Docker
 
-Выполните команду `docker build . -t price-calculator` чтобы собрать образ. Теперь вы можете
+Выполните команду `docker build . -t marketplace-calculator` чтобы собрать образ. Теперь вы можете
 запустить контейнер с приложением:
 
 ```shell
-docker run -v `pwd`:`pwd` -w `pwd` -p 80:8080 --rm price-calculator
+docker run -v `pwd`:`pwd` -w `pwd` -p 80:8080 --rm marketplace-calculator
 ```
 
 Приложение будет развернуто на [localhost](http://localhost/) и готово к использованию.
