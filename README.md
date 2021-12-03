@@ -49,7 +49,7 @@ k8s-дескриптор с секретами
 
 ## Использование
 
-Для расчёта цены корзины используется HTTP endpoint `POST /calculate-cart-price?id={}`, например:
+Для расчёта цены корзины используется HTTP endpoint `POST /calculate-cart-price`, например:
 
 ```shell
 curl -d '{"payment":"Google Pay","products":[{"id":1,"count":2}],"addressId":3}' -H "Content-Type: application/json" -X POST https://marketplace-calculator-cl95n.ondigitalocean.app/calculate-cart-price/
